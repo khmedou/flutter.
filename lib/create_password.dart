@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:projet/Password_screen.dart';
 import 'package:projet/home_screen.dart';
 
 class CreatPassScreen extends StatefulWidget {
@@ -27,7 +28,7 @@ class _CreatPassScreenState extends State<CreatPassScreen> {
                 children: [
                   IconButton(
                     onPressed: () {
-                      // Get.to(() => loginscreen());
+                      Get.to(() => PasswordScreen());
                     },
                     icon: Icon(Icons.arrow_back),
                   ),
@@ -42,7 +43,7 @@ class _CreatPassScreenState extends State<CreatPassScreen> {
                 ],
               ),
               SizedBox(
-                width: 10.0,
+                width: 1.0,
               ),
               Image.asset(
                 'assets/images/c.png',
@@ -50,7 +51,7 @@ class _CreatPassScreenState extends State<CreatPassScreen> {
                 width: 800,
               ),
               SizedBox(
-                height: 40,
+                height: 10,
               ),
               Text('Create Your New Password',
                   style: TextStyle(color: Colors.black54, fontSize: 15.0)),
@@ -74,7 +75,7 @@ class _CreatPassScreenState extends State<CreatPassScreen> {
                 ),
               ),
               SizedBox(
-                height: 10,
+                height: 5,
               ),
               TextFormField(
                 keyboardType: TextInputType.visiblePassword,
@@ -93,7 +94,7 @@ class _CreatPassScreenState extends State<CreatPassScreen> {
                 ),
               ),
               SizedBox(
-                height: 30.0,
+                height: 10.0,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -118,7 +119,7 @@ class _CreatPassScreenState extends State<CreatPassScreen> {
                 ],
               ),
               SizedBox(
-                height: 40,
+                height: 10,
               ),
               InkWell(
                 onTap: () {
@@ -210,7 +211,7 @@ class _CreatPassScreenState extends State<CreatPassScreen> {
                         fontSize: 20.0,
                       )),
                   SizedBox(
-                    height: 50.0,
+                    height: 30.0,
                   ),
                   InkWell(
                     onTap: () {
@@ -223,11 +224,11 @@ class _CreatPassScreenState extends State<CreatPassScreen> {
                       ),
                       padding: EdgeInsets.symmetric(
                         vertical: 10,
-                        horizontal: 20,
+                        horizontal: 10,
                       ),
                       alignment: Alignment.center,
                       height: 50,
-                      width: 500,
+                      width: 200,
                       child: Text(
                         "Go to HomePage",
                         style: TextStyle(

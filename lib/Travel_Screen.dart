@@ -165,7 +165,7 @@ class TravelScreen extends StatelessWidget {
                   ),
                   child: InkWell(
                     onTap: () {
-                      Get.to(() => bookedscreen());
+                      Get.to(() => ChoiceScreen());
                     },
                     child: Container(
                       decoration: BoxDecoration(
